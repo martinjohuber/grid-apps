@@ -1,4 +1,4 @@
-iFactory3D version of the Kiri:Moto Slicer.
+## iFactory3D version of the Kiri:Moto Slicer.
 
 More informations in the original repository:
 https://github.com/GridSpace/grid-apps
@@ -17,22 +17,31 @@ https://ifactory3d.com/
 
 ## Testing Locally (with Docker):
 git clone https://github.com/martinjohuber/grid-apps
+
 cd grid-apps
+
 docker compose -f src/dock/compose.yml up
 
 ## Testing Locally (with NodeJS):
 Check your node version and npm version, mine is for example:
+
 npm -v
+
 9.2.0
 
 node -v
+
 v18.19.0
 
 ## Install with:
 git clone https://github.com/martinjohuber/grid-apps
+
 cd grid-apps
+
 npm i
+
 sudo npm install -g @gridspace/app-server
+
 gs-app-server --debug
 
 to start a local instance of the apps. then use a browser to open localhost:8080/kiri
