@@ -54,9 +54,27 @@ If gs-app-server is not found, then perhaps ~/.local/bin is not in your path. Yo
 
 You can now access your environment of grid-apps by going to localhost:8080/kiri
 
-Other Start Options
-gs-app-server
+Other Start Options <br/>
+<code>gs-app-server</code>
 
 serves code as obfuscated, compressed bundles. this is the mode used to run on a public web site.
 
 requires node.js 12+
+
+## installation pm2 (process manager)
+
+<code>sudo npm install pm2 -g</code>
+
+startup service einrichten (autostart on reboot) <br/>
+<code>pm2 startup</code>
+
+You have to run this command as root. Execute the following command: <br/>
+<code>sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v14.3/bin pm2 startup <distribution> -u <user> --hp <home-path></code>
+
+Navigate to the grid-apps folder: <br/>
+<code>pm2 start gs-app-server</code>
+
+Last but not least save the app list to restart on reboot <br/>
+<code>pm2 save</code>
+
+
