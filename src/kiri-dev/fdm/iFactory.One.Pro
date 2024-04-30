@@ -35,7 +35,7 @@
         "G28 Y ; Home Y",
         "G28 X ; Home X",
         "M104 S0 ; Extruder heater off",
-        "M140 S0 ; Heated bed heater off"
+        "M140 S0 ; Heated bed heater off",
 		"G92 Z0"
     ],
     "extruders":[
