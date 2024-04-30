@@ -740,7 +740,7 @@ const conf = exports({
         },
         // current device name by mode
         filter:{
-            FDM: "Any.Generic.Marlin",
+            FDM: "Atom.v2",
             SLA: "Anycubic.Photon",
             CAM: "Any.Generic.Grbl",
             LASER: "Any.Generic.Laser"
